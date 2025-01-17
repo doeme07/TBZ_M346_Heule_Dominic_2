@@ -25,6 +25,39 @@ write_files:
       <?php
       phpinfo();
       ?>
+- path: /var/www/html/index.html
+    content: |
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Webserver Test</title>
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  text-align: center;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f4f4f9;
+                  color: #333;
+              }
+              h1 {
+                  color: #007BFF;
+              }
+              .container {
+                  margin-top: 20%;
+              }
+          </style>
+      </head>
+      <body>
+          <div class="container">
+              <h1>Webserver is Working!</h1>
+              <p>Your Apache webserver is running successfully.</p>
+              <p>Deployed with <strong>Cloud-Init</strong>.</p>
+          </div>
+      </body>
+      </html>
 runcmd:
   - apt update
   - apt install -y git
