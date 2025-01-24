@@ -13,14 +13,19 @@ package_update: true
 packages:
   - curl 
   - wget 
+  - apache2
+write_files:
+  - path: /var/www/html/index.html
+    content: | 
+      <!DOCTYPE html>
+      <html>
+          <head>
+              <title>Example</title>
+          </head>
+          <body>
+              <p>This is an example of a simple HTML page with one paragraph.</p>
+          </body>
+      </html>
+    permissions: '0644'
 runcmd:
-  - sudo apt update
-  - sudo apt install -y apache2
-  - sudo apt install -y php
-  - sudo apt install -y libapache2-mod-php
-  - sudo apt install -y mariadb-server
-  - sudo apt install -y php-mysqli
-  - sudo sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf
-  - sudo mysql -sfu root -e "GRANT ALL ON *.* TO 'admin'@'%' IDENTIFIED BY 'Dominic' WITH GRANT OPTION;"
-  - sudo systemctl restart mariadb.service
   - sudo systemctl restart apache2
