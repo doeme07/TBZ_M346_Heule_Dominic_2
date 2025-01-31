@@ -28,8 +28,14 @@ PaaS und SaaS sind ideal für Projekte mit begrenzten Ressourcen oder flexiblen 
 ![](2.PNG)
 ![](3.PNG)
 ![](4.PNG)
+
+Auto-Scaling ermöglicht es der Anwendung, bei Bedarf mehr Ressourcen hinzuzufügen, um Lastspitzen zu bewältigen, und sie bei geringerer Nutzung wieder zu reduzieren. Dies spart Kosten und erhöht die Flexibilität.
+
 ![](5.PNG)
 ![](6.PNG)
+
+Ein Load Balancer verteilt den eingehenden Traffic gleichmässig auf mehrere Instanzen, was die Performance verbessert und die Anwendung hochverfügbar macht. Dies ist besonders wichtig für Anwendungen mit variablem oder hohem Traffic.
+
 ![](7.PNG)
 ![](8.PNG)
 ![](9.PNG)
