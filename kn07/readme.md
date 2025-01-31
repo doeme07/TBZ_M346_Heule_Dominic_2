@@ -37,3 +37,17 @@ PaaS und SaaS sind ideal für Projekte mit begrenzten Ressourcen oder flexiblen 
 ![](11.PNG)
 ![](12.PNG)
 ![](13.PNG)
+
+### Was ist CloudFormation?
+CloudFormation ist ein Infrastruktur-als-Code (IaC)-Service von AWS, der es ermöglicht, Ressourcen in der Cloud automatisch zu erstellen, zu verwalten und zu konfigurieren. Dabei wird eine deklarative Syntax verwendet (meistens JSON oder YAML), um eine Vorlage zu erstellen, die die Infrastruktur definiert.
+Mit CloudFormation können komplexe Architekturen einfach bereitgestellt werden, einschliesslich EC2-Instanzen, Datenbanken, Netzwerken und anderen AWS-Diensten.
+
+Vorteile von CloudFormation:
+
+Automatisierung: Erstellen, Aktualisieren und Löschen von Ressourcen erfolgt automatisiert.
+
+Versionierung: Änderungen in der Infrastruktur können versioniert und zurückgesetzt werden.
+
+Abhängigkeiten: CloudFormation löst automatisch Abhängigkeiten zwischen Ressourcen (z. B. Netzwerke vor Datenbanken).
+
+Wiederverwendbarkeit: Vorlagen können mehrfach verwendet werden, um identische Umgebungen zu erstellen.
