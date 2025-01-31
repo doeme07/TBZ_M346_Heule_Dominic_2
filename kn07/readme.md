@@ -51,3 +51,26 @@ Versionierung: Änderungen in der Infrastruktur können versioniert und zurückg
 Abhängigkeiten: CloudFormation löst automatisch Abhängigkeiten zwischen Ressourcen (z. B. Netzwerke vor Datenbanken).
 
 Wiederverwendbarkeit: Vorlagen können mehrfach verwendet werden, um identische Umgebungen zu erstellen.
+
+### Was ist Cloud-Init?
+Cloud-Init ist ein Open-Source-Tool, das hauptsächlich für die Initialisierung von Cloud-Instanzen (z. B. EC2-Instanzen) verwendet wird. Es ermöglicht die Ausführung von benutzerdefinierten Skripten oder Konfigurationen während des Startvorgangs einer Instanz. Cloud-Init ist unabhängig von einem spezifischen Cloud-Anbieter und unterstützt mehrere Plattformen wie AWS, Azure und Google Cloud.
+
+Typische Funktionen von Cloud-Init:
+
+
+Initialisierung von Instanzen: Festlegen von Hostnamen, Benutzerdaten und Netzwerkdetails.
+
+Softwareinstallation: Automatische Installation und Konfiguration von Paketen.
+
+Benutzerdefinierte Skripte: Unterstützung für Shell-Skripte und Cloud-Init-spezifische YAML-Syntax.
+
+### Unterschiede
+
+
+| **Merkmal**            | **CloudFormation**                                           | **Cloud-Init**                                        |
+|------------------------|-------------------------------------------------------------|-----------------------------------------------------|
+| **Anwendungsbereich**  | Infrastruktur-Management und Bereitstellung kompletter Systeme | Initialisierung und Konfiguration einzelner Instanzen |
+| **Abhängigkeiten**     | Automatisches Management von Abhängigkeiten zwischen Ressourcen | Keine Unterstützung für Abhängigkeitsmanagement     |
+| **Zielplattform**      | Speziell für AWS entwickelt                                   | Plattformunabhängig (AWS, Azure, Google Cloud usw.) |
+| **Syntax**             | JSON/YAML                                                   | YAML oder Shell-Skripte                             |
+| **Nutzungsebene**      | Höheres Abstraktionsniveau für ganze Architekturen           | Tieferes Niveau für die Konfiguration einzelner Instanzen |
